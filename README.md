@@ -7,5 +7,5 @@
 
 # Jalankan Script Di Termux
 1. $ termux-setup-storage [enter]
-Izinkan Penyimpanan Untuk Termux 
+\nIzinkan Penyimpanan Untuk Termux 
 2. $ pkg update -y && pkg upgrade -y
