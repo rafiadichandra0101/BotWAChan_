@@ -28,11 +28,11 @@ const speed = require('performance-now')
 prefix = '-'
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:+62 812-1519-9447\n' // full name
+            + 'FN:+62 852-8267-7885\n' // full name
             + 'ORG:Owner Caliph Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6281215199447:+62 812-1519-9447\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=6285282677885:+62 852-8267-7885\n' // WhatsApp ID + phone number
             + 'END:VCARD'
-blocked = ['6282331668856@s.whatsapp.net']
+blocked = ['6285282677885@s.whatsapp.net']
 
 function kyun(seconds){
   function pad(s){
@@ -51,7 +51,7 @@ async function starts() {
 	client.logger.level = 'warn'
 	console.log(banner.string)
 	client.on('qr', () => {
-		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr code above'))
+		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan QR Code Now!'))
 	})
 	client.on('credentials-updated', () => {
 		fs.writeFileSync('./🐦.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
@@ -204,7 +204,7 @@ async function starts() {
     const bisakah = ['Bisa','Tidak Bisa']
     const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = client.user.jid
-			const nomorOwner = '6281215199447@s.whatsapp.net'
+			const nomorOwner = '6281218898489@s.whatsapp.net'
 			const premium = [nomorOwner]
 			const totalchat = await client.chats.all()
 			const ownerNumber = [nomorOwner] // replace this with your number
@@ -928,13 +928,15 @@ async function starts() {
 			   break
                case 'apakah':
                client.updatePresence(from, Presence.composing) 
-               random = apakah[Math.floor(Math.random() * (apakah.length))]  	
+               random = apakah[Math.floor(Math.random() * (apakah.length))]
+  	
 			   hasil = `Pertanyaan : *${body.slice(1)}*\n\nJawaban : *${random}*`
 			   reply(hasil)
 			   break
               case 'bisakah':
                 client.updatePresence(from, Presence.composing) 
-                random = bisakah[Math.floor(Math.random() * (bisakah.length))]  	
+                random = bisakah[Math.floor(Math.random() * (bisakah.length))]
+  	
 			   hasil = `Pertanyaan : *${body.slice(1)}*\n\nJawaban : *${random}*`
 			   reply(hasil)
 			   break
@@ -946,7 +948,8 @@ async function starts() {
                 break
                case 'kapankah':
                client.updatePresence(from, Presence.composing) 
-               random = kapankah[Math.floor(Math.random() * (kapankah.length))]  	
+               random = kapankah[Math.floor(Math.random() * (kapankah.length))]
+  	
                random2 = `${Math.floor(Math.random() * 8)}`
                hasil = `Pertanyaan : *${body.slice(1)}*\n\nJawaban : *${random2} ${random}*`
               reply(hasil)
