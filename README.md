@@ -7,5 +7,29 @@
 
 # Jalankan Script Di Termux
 1. $ termux-setup-storage [enter]
-\nIzinkan Penyimpanan Untuk Termux 
-2. $ pkg update -y && pkg upgrade -y
+Izinkan Penyimpanan Untuk Termux 
+
+# Next
+2. $ pkg update -y && pkg upgrade -y [enter]
+3. $ pkg install ffmpeg -y [enter]
+4. $ pkg install wget -y [enter]
+5. $ pkg install git -y [enter]
+6. $ pkg install nodejs -y [enter]
+7. $ pkg install tesseract [enter]
+8. $ git clone https://githubcom/rafiadichandra0101/BotWAChan_ [enter]
+9. $ ls  [enter]
+10. $ cd BotWAChan_ [enter]
+11. $ npm i -g cwebp [enter]
+12. $ npm i node-tesseract-ocr [enter]
+13. $ npm i -g ytdl [enter]
+14. $ npm i [enter]
+15. $ npm i got [enter]
+Jika Terjadi Erorr, Silahkan Ulangi Kembali Perintahnya!
+
+# Mulai
+$ node index.js [enter]
+Atau $ npm start  [enter]
+
+
+# Peringatan!
+Jalankan Perintah Tanpa Tanda '$' 
