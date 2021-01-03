@@ -1,4 +1,4 @@
-X# Bot Whatsapp Versi Termux
+# Bot Whatsapp Versi Termux
 1. Punya Hp
 2. Download Termux Di Play Store / App Store
 3. Cewek Buat Nemenin
