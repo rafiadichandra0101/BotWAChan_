@@ -26,6 +26,8 @@ Izinkan Penyimpanan Untuk Termux
 15. $ npm i got [enter]
 Jika Terjadi Erorr, Silahkan Ulangi Kembali Perintahnya!
 
+Atau $ bash install.sh  [enter]
+Install Sekaligus Tanpa Mengetik Perintah Diatas
 # Mulai
 $ node index.js [enter]
 Atau $ npm start  [enter]
